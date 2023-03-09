@@ -10,24 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_02_110852) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_09_123103) do
   create_table "concerts", force: :cascade do |t|
-    t.string "time"
-    t.string "location"
     t.date "date"
+    t.string "location"
+    t.integer "ticketPrice"
     t.integer "ticketNum"
+    t.time "concertTime"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "tickets", force: :cascade do |t|
-    t.string "email"
-    t.string "date"
+    t.date "date"
     t.string "location"
-    t.integer "price"
+    t.integer "ticketPrice"
+    t.time "concertTime"
+    t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "primary_key"
   end
 
 end

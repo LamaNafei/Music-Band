@@ -32,7 +32,7 @@ body {font-family: "Lato", sans-serif}
 </div>
 
 <h1>Add New Concert</h1>
-<form action="admin" class='add-concert-form'>
+<form method='post' action="admin" class='add-concert-form'>
 <input type="date" class="input-box" placeholder="Concert Date" name="date"required>
 <input type="location" class="input-box" placeholder="location" name="location"required>
 <input type="number" class="input-box" placeholder="Ticket Price in $" name="price" min=0 required>
