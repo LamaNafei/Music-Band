@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+  scroll-padding-top:4rem;
+  list-style:none;
+  text-decoration:none;
+}
+.btn {
+	padding: 8px 22px;
+	border-radius: 5rem;
+}
+.btn:hover {
+	background: black;   
+}
+.add-concert-form{
+	box-shadow: var(--box-shadow);
+	background : #fff;
+	/* padding: 10px; */
+	margin: 3% auto 0;
+	width: 50%;
+	text-align: center;	
+}
+h1{
+	color: black;
+    text-align: center;
+    padding-top: 8%;
+}
+
+.input-box{
+	border-radius: 20px;
+	padding: 10px;
+	margin: 10px 10px;
+	width: 60%;
+	border: 1px solid #999;
+	outline: none;
+}
+
+button{
+	color: #fff;
+	width: 30%;
+	padding: 15px;
+	border-radius: 20px;
+	font-size: 15px;
+	margin: 30px 0;
+	border: none;
+	outline: none;
+	cursor: pointer;	
+}
+
+.add-btn{
+	background-color : black;
+	width: 40%;
+}
