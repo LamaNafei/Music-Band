@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  post '/', to: 'departments#homes'
+  get '/ticketModal', to: 'departments#modal'
+  post '/ticketModal', to: 'departments#modal'
+  post '/', to: 'departments#home'
   get '/',  to: 'departments#home' 
   post '/admin', to: 'departments#admin'
   get '/admin', to: 'departments#admin'

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+  <!-- Ticket Modal -->
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+      <a href="/">
+        <span class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+       </a>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+      <form method='post' action='/ticketModal'>
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $<%= concerts[0]['ticketPrice']%> per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?" name="count" required>
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email" name="email" required>
+        <input value='<%= concerts[0]['date']%>' name='concertDate' hidden>
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" type="submit">PAY<i class="fa fa-check"></i></button>
+        <a href="/">
+        <button class="w3-button w3-red w3-section">Close <i class="fa fa-remove"></i></button>
+        </a>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+        </form>
+    </div>
+  </div>
+  </body>
+  </html>
+
